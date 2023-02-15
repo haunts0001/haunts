@@ -36,10 +36,10 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 
 mouse.KeyDown:Connect(function(key)
 if key == hotkey then
-if getgenv().ValiantAimHacks.SilentAimEnabled == true then
- getgenv().ValiantAimHacks.SilentAimEnabled = false
+if getgenv().haunts0001.SilentAimEnabled == true then
+ getgenv().haunts0001.SilentAimEnabled = false
 else
-getgenv().ValiantAimHacks.SilentAimEnabled = true
+getgenv().haunts0001.SilentAimEnabled = true
 end
 end
 end)
