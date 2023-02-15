@@ -11,6 +11,16 @@ $$ |  $$ |\$$$$$$$ |\$$$$$$  |$$ |  $$ | \$$$$  |$$$$$$$  |
                                         
 ]]--
 
+_G.ShowFOV = false
+_G.VisibleCheck = true
+_G.TeamCheck = true
+_G.FOV = 15.17
+_G.HitChance = 100
+_G.Prediction = 0.12061
+_G.LockKey = "N"
+_G.Notifications = true
+_G.Aimparts = {"Head","LeftLowerArm","LeftUpperArm","LeftUpperLeg","LowerTorso","RightLowerArm","RightUpperArm","RightUpperLeg","UpperTorso"}
+
 -- Libraries 
 local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
