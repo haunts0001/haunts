@@ -5,8 +5,9 @@ _G.FOV = 15.17
 _G.HitChance = 100
 _G.Prediction = 0.12061
 _G.LockKey = "N"
-_G.Aimparts = {"Head","LeftLowerArm","LeftUpperArm","LeftUpperLeg","LowerTorso","RightLowerArm","RightUpperArm","RightUpperLeg","UpperTorso"}
 _G.Notifications = true
+_G.Aimparts = {"Head","LeftLowerArm","LeftUpperArm","LeftUpperLeg","LowerTorso","RightLowerArm","RightUpperArm","RightUpperLeg","UpperTorso"}
+
 
 --[[
 
