@@ -30,7 +30,7 @@ local function
     Notification:Notify(
         {Title = "haunts streamable", Description = text},
         {OutlineColor = Color3.fromRGB(40, 40, 40),Time = 2, Type = "image"},
-        {Image = "https://www.roblox.com/library/12491873313/haunts-0001", ImageColor = Color3.fromRGB(250, 250, 250)}
+        {Image = "rbxassetid://12491873313", ImageColor = Color3.fromRGB(250, 250, 250)}
     )
 end 
 
