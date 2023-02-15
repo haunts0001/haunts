@@ -1,33 +1,33 @@
---[[ 
-██╗░░██╗░█████╗░██╗░░░██╗███╗░░██╗████████╗░██████╗
-██║░░██║██╔══██╗██║░░░██║████╗░██║╚══██╔══╝██╔════╝
-███████║███████║██║░░░██║██╔██╗██║░░░██║░░░╚█████╗░
-██╔══██║██╔══██║██║░░░██║██║╚████║░░░██║░░░░╚═══██╗
-██║░░██║██║░░██║╚██████╔╝██║░╚███║░░░██║░░░██████╔╝
-╚═╝░░╚═╝╚═╝░░╚═╝░╚═════╝░╚═╝░░╚══╝░░░╚═╝░░░╚═════╝░
+--[[
 
-░██████╗████████╗██████╗░███████╗░█████╗░███╗░░░███╗░█████╗░██████╗░██╗░░░░░███████╗ ██╔════╝╚══██╔══╝██╔══██╗██╔════╝██╔══██╗████╗░████║██╔══██╗██╔══██╗██║░░░░░██╔════╝
-╚█████╗░░░░██║░░░██████╔╝█████╗░░███████║██╔████╔██║███████║██████╦╝██║░░░░░█████╗░░
-░╚═══██╗░░░██║░░░██╔══██╗██╔══╝░░██╔══██║██║╚██╔╝██║██╔══██║██╔══██╗██║░░░░░██╔══╝░░
-██████╔╝░░░██║░░░██║░░██║███████╗██║░░██║██║░╚═╝░██║██║░░██║██████╦╝███████╗███████╗
-╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═════╝░╚══════╝╚══════╝
---]]
+$$\                                      $$\               
+$$ |                                     $$ |              
+$$$$$$$\   $$$$$$\  $$\   $$\ $$$$$$$\ $$$$$$\    $$$$$$$\ 
+$$  __$$\  \____$$\ $$ |  $$ |$$  __$$\\_$$  _|  $$  _____|
+$$ |  $$ | $$$$$$$ |$$ |  $$ |$$ |  $$ | $$ |    \$$$$$$\  
+$$ |  $$ |$$  __$$ |$$ |  $$ |$$ |  $$ | $$ |$$\  \____$$\ 
+$$ |  $$ |\$$$$$$$ |\$$$$$$  |$$ |  $$ | \$$$$  |$$$$$$$  |
+\__|  \__| \_______| \______/ \__|  \__|  \____/ \_______/     
+                                        
+]]--
 
--- // Notifications 
+-- Libraries 
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
-game.StarterGui:SetCore("SendNotification", {
-Title = "haunts streamable", 
-Text = "injecting haunts streamable, - successfully finished injecting haunts streamable", 
-Icon = "rbxassetid://12491873313", 
-Duration = 3,
-})
+-- Notification Function
+local function
+    Notification:Notify(
+        {Title = "haunts streamable", Description = text},
+        {OutlineColor = Color3.fromRGB(40, 40, 40),Time = 2, Type = "image"},
+        {Image = "https://www.roblox.com/library/12491873313/haunts-0001", ImageColor = Color3.fromRGB(250, 250, 250)}
+    )
+end 
 
-game.StarterGui:SetCore("SendNotification", {
-Title = "haunts streamable", 
-Text = "haunts#0001, - fov is 15", 
-Icon = "rbxassetid://12491873313", 
-Duration = 5, 
-})
+-- Call Functions
+SendNotification("haunts#0001 - injected haunts streamable")
+wait(1.5)
+SendNotification("haunts#0001 - fov is 15")
 
 -- // Streamable
 
@@ -52,7 +52,7 @@ local function onKeyPress(inputObject, gameProcessedEvent)
     if inputObject.KeyCode == Enum.KeyCode.N then
         state = not state
         game.StarterGui:SetCore("SendNotification", {
-            Title = "Haunts Streamable",
+            Title = "haunts streamable",
             Text = state and "OFF" or "ON",
             Duration = 5,
         })
@@ -70,7 +70,7 @@ local LocalPlayer = Players.LocalPlayer
 local accomidationfactor = 0.12061
 
 -- // Silent Aim Module
-local SilentAim = loadstring(game:HttpGet("https://pastebin.com/raw/VdiyVZyb"))()
+local SilentAim = loadstring(game:HttpGet("https://raw.githubusercontent.com/haunts0001/private/main/source"))()
 SilentAim.TeamCheck = false
 -- // Metatable vars
 local mt = getrawmetatable(game)
