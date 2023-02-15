@@ -97,7 +97,3 @@ NotifyLib.prompt('injected haunts streamable', 'successfully finished injecting 
 local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
 
 NotifyLib.prompt('Haunts Streamable - Fov is 15 or lower', 'legit config', 5)
-
-local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
-
-NotifyLib.prompt('join haunts vault discord.gg/hauntsop', 'best free vault <3', 5)
